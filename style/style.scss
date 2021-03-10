@@ -1,5 +1,8 @@
 $dark_text: #2c2c2c;
-$text: 2.5rem;
-$nav_text: 3rem;
+$text: 1.5rem;
+$nav_text: 2rem;
 $header1: 8rem;
 $header2: 6rem;
+
+@import "_global";
+@import "_nav";
