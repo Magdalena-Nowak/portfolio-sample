@@ -1,0 +1,12 @@
+@keyframes light-on {
+  from {
+    background-color: #2e296b;
+  }
+  to {
+    background-color: rgb(206, 206, 186);
+  }
+}
+
+#window1 {
+  animation: light-on 1s ease-in infinite;
+}

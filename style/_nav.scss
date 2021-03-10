@@ -1,12 +1,44 @@
-.nav-bar {
+header {
   width: 95%;
+  min-height: 10vh;
   margin-left: auto;
+}
+.nav-bar {
+  @include flex(flex-start, center, row);
+  width: 60%;
+  padding: 2rem 0;
+}
+.logo {
+  flex: 1 1 10rem;
+  @include flex(flex-start, center, row);
   font-size: $nav_text;
-
   h1 {
     font-style: italic;
   }
 }
 .fas {
-  display: inline;
+  font-size: 2.5rem;
+  color: white;
+  background-color: $dark_text;
+  border-radius: 40px;
+  padding: 1.4rem;
+  margin-right: 1rem;
+}
+
+.menu {
+  flex: 2 1 10rem;
+  @include flex(space-between, center, row);
+  font-size: $text;
+  li {
+    flex: 1 1 5rem;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 2rem;
+  }
+}
+.active {
+  background-color: $dark_text;
+  a {
+    color: white;
+  }
 }

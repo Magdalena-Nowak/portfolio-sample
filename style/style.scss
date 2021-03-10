@@ -1,8 +1,17 @@
 $dark_text: #2c2c2c;
-$text: 1.5rem;
-$nav_text: 2rem;
+$text: 2rem;
+$nav_text: 1.2rem;
 $header1: 8rem;
 $header2: 6rem;
 
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
 @import "_global";
 @import "_nav";
+@import "_hero";
+@import "_animation";
