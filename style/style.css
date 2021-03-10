@@ -116,11 +116,11 @@ header {
 #hero {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  min-height: 90vh;
+  -ms-grid-columns: minmax(20vw, 40vw) 1fr;
+      grid-template-columns: minmax(20vw, 40vw) 1fr;
+  -ms-grid-rows: 1fr 20vh;
+      grid-template-rows: 1fr 20vh;
+  min-height: 100vh;
   width: 95%;
   margin-left: auto;
 }
@@ -154,7 +154,7 @@ header {
 
 .hero-txt p {
   font-size: 2rem;
-  margin-right: 5rem;
+  padding-right: 8rem;
 }
 
 .hero-social {
@@ -164,7 +164,6 @@ header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  margin: 3rem 0;
 }
 
 .hero-social img {
@@ -179,6 +178,12 @@ header {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  margin-right: 2rem;
+}
+
+.hero-animation svg {
+  width: 100%;
+  height: 100%;
 }
 
 @-webkit-keyframes move {
@@ -278,5 +283,58 @@ header {
 #star4 {
   -webkit-animation: light 2s ease-in infinite 1s;
           animation: light 2s ease-in infinite 1s;
+}
+
+footer {
+  background-color: #2c2c2c;
+  min-height: 10vh;
+  color: white;
+}
+
+.wrapper {
+  width: 95%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper h2 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 20rem;
+          flex: 2 1 20rem;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.wrapper .social {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .social a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  text-align: center;
+}
+
+.fab {
+  color: white;
+  font-size: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
