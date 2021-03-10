@@ -1,12 +1,44 @@
-@keyframes light-on {
+@keyframes move {
   from {
-    background-color: #2e296b;
+    transform: translateY(50px);
   }
   to {
-    background-color: rgb(206, 206, 186);
+    transform: translateY(0);
   }
 }
 
-#window1 {
-  animation: light-on 1s ease-in infinite;
+@keyframes light {
+  from {
+    transform: scale(1);
+    background-color: wheat;
+  }
+  to {
+    transform: scale(2);
+    background-color: white;
+  }
+}
+@keyframes light3 {
+  from {
+    transform: translate(0);
+    background-color: wheat;
+  }
+  to {
+    transform: translate(200px, 100px);
+    background-color: white;
+  }
+}
+#laptop {
+  animation: move 3s ease-in-out;
+}
+#star1 {
+  animation: light 2s ease-in infinite;
+}
+#star2 {
+  animation: light 3s ease-in infinite 2s;
+}
+#star3 {
+  animation: light3 2s ease-in infinite;
+}
+#star4 {
+  animation: light 2s ease-in infinite 1s;
 }

@@ -181,26 +181,102 @@ header {
   grid-column: 2/3;
 }
 
-@-webkit-keyframes light-on {
+@-webkit-keyframes move {
   from {
-    background-color: #2e296b;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   to {
-    background-color: #ceceba;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-@keyframes light-on {
+@keyframes move {
   from {
-    background-color: #2e296b;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   to {
-    background-color: #ceceba;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-#window1 {
-  -webkit-animation: light-on 1s ease-in infinite;
-          animation: light-on 1s ease-in infinite;
+@-webkit-keyframes light {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: wheat;
+  }
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    background-color: white;
+  }
+}
+
+@keyframes light {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: wheat;
+  }
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    background-color: white;
+  }
+}
+
+@-webkit-keyframes light3 {
+  from {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    background-color: wheat;
+  }
+  to {
+    -webkit-transform: translate(200px, 100px);
+            transform: translate(200px, 100px);
+    background-color: white;
+  }
+}
+
+@keyframes light3 {
+  from {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    background-color: wheat;
+  }
+  to {
+    -webkit-transform: translate(200px, 100px);
+            transform: translate(200px, 100px);
+    background-color: white;
+  }
+}
+
+#laptop {
+  -webkit-animation: move 3s ease-in-out;
+          animation: move 3s ease-in-out;
+}
+
+#star1 {
+  -webkit-animation: light 2s ease-in infinite;
+          animation: light 2s ease-in infinite;
+}
+
+#star2 {
+  -webkit-animation: light 3s ease-in infinite 2s;
+          animation: light 3s ease-in infinite 2s;
+}
+
+#star3 {
+  -webkit-animation: light3 2s ease-in infinite;
+          animation: light3 2s ease-in infinite;
+}
+
+#star4 {
+  -webkit-animation: light 2s ease-in infinite 1s;
+          animation: light 2s ease-in infinite 1s;
 }
 /*# sourceMappingURL=style.css.map */
