@@ -5,9 +5,9 @@ footer {
 }
 .wrapper {
   width: 95%;
-  margin-left: auto;
+  min-height: inherit;
+  margin: auto;
   display: flex;
-  padding-top: 1.5rem;
   justify-content: space-between;
   align-items: center;
   h2 {
@@ -28,4 +28,18 @@ footer {
 .fab {
   color: white;
   font-size: 5rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .wrapper h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .wrapper h2 {
+    font-size: 1.5rem;
+  }
+  .fab {
+    font-size: 3rem;
+  }
 }
