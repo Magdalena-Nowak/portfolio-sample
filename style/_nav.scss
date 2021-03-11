@@ -7,17 +7,20 @@ header {
   @include flex(flex-start, center, row);
   width: 60%;
   padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 .logo {
   flex: 1 1 10rem;
   @include flex(flex-start, center, row);
-  font-size: $nav_text;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
   h1 {
     font-style: italic;
+    letter-spacing: 0.2rem;
   }
 }
 .fas {
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: white;
   background-color: $dark_text;
   border-radius: 40px;
@@ -29,6 +32,7 @@ header {
   flex: 2 1 10rem;
   @include flex(space-between, center, row);
   font-size: $text;
+  margin-bottom: 2rem;
   li {
     flex: 1 1 5rem;
     text-align: center;
@@ -42,24 +46,38 @@ header {
     color: white;
   }
 }
-
-@media screen and (min-width: 2000px) {
-  .logo {
-    font-size: 2.5rem;
-    color: blue;
-  }
-  .fas {
-    font-size: 4rem;
-  }
+#last {
+  margin-right: 2rem;
+}
+@media screen and (max-width: 1800px) {
   .menu {
     font-size: 3rem;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 1400px) {
+  .nav-bar {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .logo {
+    .fas {
+      font-size: 3rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .menu {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 640px) {
   .nav-bar {
     flex-direction: column;
     justify-content: center;
     padding: 0;
+    margin: 0;
   }
   .fas {
     font-size: 2rem;
@@ -70,18 +88,5 @@ header {
   }
   .logo {
     max-height: 8vh;
-  }
-}
-@media screen and (max-width: 860px) {
-  .nav-bar {
-    width: 100%;
-  }
-  header {
-    width: 90%;
-    margin: auto;
-  }
-  main {
-    width: 90%;
-    margin: auto;
   }
 }

@@ -1,7 +1,7 @@
 $dark_text: #2c2c2c;
-$text: 2rem;
-$nav_text: 1.2rem;
-$header1: 8rem;
+$text: 3rem;
+$nav_text: 1.5rem;
+$header1: 10rem;
 $header2: 6rem;
 
 @mixin flex($justify, $align, $direction) {
@@ -17,3 +17,4 @@ $header2: 6rem;
 @import "_animation";
 @import "_footer";
 @import "_projects";
+@import "_contact";

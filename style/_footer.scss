@@ -14,6 +14,7 @@ footer {
     flex: 2 1 20rem;
     font-style: italic;
     font-size: $text;
+    letter-spacing: 0.2rem;
   }
   .social {
     flex: 1 1 20rem;
@@ -29,13 +30,15 @@ footer {
   color: white;
   font-size: 5rem;
 }
-
-@media screen and (min-width: 2000px) {
+@media screen and (max-width: 1000px) {
   .wrapper h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+  .fab {
+    font-size: 4rem;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 640px) {
   .wrapper h2 {
     font-size: 1.5rem;
   }

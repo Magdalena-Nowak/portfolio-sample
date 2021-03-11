@@ -26,10 +26,23 @@
             <ul class="menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../projects/index.html">Projects</a></li>
-                <li class="active"><a href="index.html">Contact</a></li>
+                <li class="active" id="last"><a href="index.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="form-wrapper">
+            <form>
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" type="text" id="name" name="email" requaired>
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" name="email" requaired>
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-input" name="message" id="message" requaired cols="25" rows="8"></textarea>
+                <button class="form-button" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
     <footer>
         <div class="wrapper">
             <h2>Megs Dev &copy; 2021</h2>
